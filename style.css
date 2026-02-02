@@ -6,8 +6,11 @@
     background-size: cover;
     font-size: large;
     font-family: 'Nintendo-DS-BIOS';
-    height: 50%;
-    width: 25%;
+    height: 100%;
+    width: 20%px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 .woahcontent {
     padding: 20px;
