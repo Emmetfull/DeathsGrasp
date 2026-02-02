@@ -1,0 +1,9 @@
+.woah {
+    padding: 60px;
+    text-align: center;
+    color: chocolate;
+    background-image: url(dino.png);
+    background-size: cover;
+    font-size: large;
+    font-family: 'Nintendo-DS-BIOS';
+}
