@@ -1,11 +1,13 @@
 .woah {
     padding: 60px;
     text-align: center;
-    color: chocolate;
+    color: rgb(255, 106, 0);
     background-image: url(dino.png);
     background-size: cover;
     font-size: large;
     font-family: 'Nintendo-DS-BIOS';
+    height: 50%;
+    width: 25%;
 }
 .woahcontent {
     padding: 20px;
