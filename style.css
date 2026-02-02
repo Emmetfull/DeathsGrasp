@@ -1,12 +1,12 @@
 .woah {
     text-align: center;
-    color: rgb(255, 106, 0);
-    background-color: rgb(255, 166, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 145, 0);
     background-size: cover;
     font-size: large;
     font-family: 'Nintendo-DS-BIOS';
     height: 100%;
-    width: 30%px;
+    width: 20%;
     position: fixed;
     left: 0;
     top: 0;
@@ -16,4 +16,18 @@
 }
 .woahcontent {
     padding: 20px;
+}
+
+.tilted {
+    width: 15%;
+    height: 15%;
+    top: 50px;
+    left: 50%;
+    transform: rotate(5deg);
+    transition: transform 0.3s ease;
+}
+.tilted:hover {
+    transform: rotate(0deg);
+
+
 }
