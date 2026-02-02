@@ -1,5 +1,4 @@
 .woah {
-    padding: 60px;
     text-align: center;
     color: rgb(255, 106, 0);
     background-image: url(dino.png);
@@ -11,6 +10,9 @@
     position: fixed;
     left: 0;
     top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    z-index: 1;
 }
 .woahcontent {
     padding: 20px;
