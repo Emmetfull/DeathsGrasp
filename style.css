@@ -31,53 +31,74 @@
 
 
 }
-.gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      justify-content: center;
-      gap: 50px 40px;
-      padding: 80px 40px;
-      z-index: 2;
-    }
-.gallery-item {
-      position: relative;
-      cursor: pointer;
-      overflow: hidden;
-      aspect-ratio: 1/1;
-      text-decoration: none;
-      color: white;
-      transform: rotate(45deg);
-      background-color: #9e702a;
-      margin-top: 0;
-      
-    }
-.gallery-item img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      top: 0; left: 0;
-    }
- .gallery-item img.hover-image {
-      opacity: 0;
-    }
+.grid {
+  width: 75%;
+  max-width: 75%;
+  margin: 0 auto;
+}
 
-.gallery-item:hover img.hover-image {
-      opacity: 1;
-    }
+.grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-.gallery-item:hover img.main-image {
-      opacity: 0;
-    }
+.grid-item {
+  width: 21.833%;
+  padding-bottom: 21.833%;
+  overflow: hidden;
+  float: left;
+  background: #BBB;
+  transform: rotate(45deg);
+  margin: 5.5%;
+  margin-top: -11%;
+  position: relative;
+}
+.grid-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+  left: 50%;
+    position: absolute;
+}
+.grid-item img.hover-img {
+    opacity: 0;
+}
+.grid-item:hover img.hover-img {
+    opacity: 1;
+} 
+.grid-item:hover img.main-img {
+    opacity: 0;
+}
+.grid-item:nth-child(1),
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+   margin-top: 5%;
+}
 
-.character-name {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      color: #ff9900;
-      pointer-events: none;
-      transform: rotate(-45deg);
-      left: 60%;
-    }
+.grid-item:nth-child(5n+4) {
+    margin-left: 21.9%;
+}
+
+.grid-item:nth-child(5n+6) {
+    clear:left;
+}
+
+.grid-item:nth-child(5n+6):last-of-type {
+  margin-left: 38.25%;
+}
+
+
+.grid-inner {
+  box-sizing: border-box;
+  position: absolute;
+  top:25%;
+  left: 25%;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  text-align: center;
+  padding-top: 40%;
+  font-size: 2em;
+}
