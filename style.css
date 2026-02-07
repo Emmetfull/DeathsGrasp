@@ -27,7 +27,7 @@
   max-width: 500px;
   margin-left: 22%;
   margin: 10px auto;
-
+   container-type: inline-size;
   position: relative;
 }
 
@@ -87,24 +87,31 @@
 .grid-inner {
   box-sizing: border-box;
   position: absolute;
-  top:25%;
-  left: 10%;
+  top:32%;
+  left: 15%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 50%;
+  min-height: 50%;
+  overflow-wrap: normal;
+  white-space: normal;
   word-wrap: break-word;
-  width: 70%;
-  max-width: 70%;
-  height: 100%;
+  width: 60%;
+  max-width: 60%;
+  height: 80%;
   color: aliceblue;
+  font-size: clamp(0.1rem, calc(2cqi + 1vw), 2.5rem);
   text-align: center;
-  padding-top: 40%;
-  font-size: clamp(8px, 4cqi, 2em); 
-  overflow-wrap: break-word;
+  overflow: visible;
+  line-height: 0.8;
 }
 .grid-inner img {
     transform: rotate(-45deg);
     width: 160%;
-    top: -30%;
-    left: -20%;
+    top: -35%;
+    left: -25%;
     position: absolute;
     z-index: -1;
 }
